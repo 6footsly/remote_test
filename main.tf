@@ -16,12 +16,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "statefile-rg"
+  name     = "statefile222-rg"
   location = "East US"
 }
 resource "azurerm_storage_account" "example" {
   name                     = "mystorage222"
-  resource_group_name      = "statefile-rg"
+  resource_group_name      = "statefile222-rg"
   location                 = "East US"
   account_tier             = "Standard"
   account_replication_type = "LRS"
