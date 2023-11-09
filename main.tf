@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "example" {
   location = "East US"
 }
 resource "azurerm_storage_account" "example" {
-  name                     = "myabc-storage123"
+  name                     = "myabcstorage123"
   resource_group_name      = "statefile222-rg"
   location                 = "East US"
   account_tier             = "Standard"
