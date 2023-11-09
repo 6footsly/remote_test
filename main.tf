@@ -15,10 +15,13 @@ provider "azurerm" {
   tenant_id       = "4bcf17d2-d890-4369-a0b5-ceff8e65262d"
 }
 
-
+resource "azurerm_resource_group" "example" {
+  name     = "statefile-rg"
+  location = "East US"
+}
 resource "azurerm_storage_account" "example" {
   name                     = "mystorage222"
-  resource_group_name      = "strrg"
+  resource_group_name      = "statefile-rg"
   location                 = "East US"
   account_tier             = "Standard"
   account_replication_type = "LRS"
